@@ -1,0 +1,60 @@
+/*
+  *手机
+  @media screen and (max-width: 767px) {}
+  *平板以下
+  @media screen and (max-width: 991px){}
+  *中等屏幕
+  @media(min-width: 992px) {}
+  *大屏幕
+  @media(min-width: 1200px) {}
+*/
+
+.bottom {
+  background: #2f3032;
+}
+.bottom .bottom-row .bottom-item{
+  color: #fff;
+  font-size: 17px; 
+  padding-right: 10px;
+  word-break: break-all;
+  text-align: center;
+}
+/*平板以下*/
+@media screen and (max-width: 991px) {
+  .bottom {
+    padding: 0.2rem 0.3rem;
+  }
+  .bottom .bottom-row{
+    padding-top: 0.2rem;
+  }
+  .bottom .bottom-row .bottom-item {
+    width: 100%;
+    font-size: 0.24rem;
+    padding-right: 0.1rem;
+  }
+  .bottom .bottom-row:nth-child(2) .bottom-item {
+    width: 50%;
+    margin-top: 0.1rem;
+  }
+}
+/*中屏以上*/
+@media (min-width: 992px) {
+  .bottom {
+    padding: 60px 30px;
+  }
+  .bottom .bottom-row:first-child{
+    padding-top: 0; 
+  }
+  .bottom .bottom-row {
+    padding-top: 20px;
+  }
+  .bottom .bottom-row .bottom-item {
+    font-size: 16px;
+  }
+}
+/*大屏幕*/
+@media (min-width: 1200px) {
+  .bottom .bottom-row .bottom-item {
+    font-size: 17px;
+  }
+}
